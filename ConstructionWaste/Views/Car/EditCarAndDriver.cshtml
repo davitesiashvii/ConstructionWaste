@@ -1,0 +1,67 @@
+﻿@model ConstructionWaste.Models.CarVM
+
+@{
+    ViewData["Title"] = "EditCarAndDriver";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>EditCarAndDriver</h1>
+
+<h4>CarVM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditCarAndDriver">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Car.Id" class="control-label"></label>
+                <input asp-for="Car.Id" class="form-control" />
+                <span asp-validation-for="Car.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CarDriver.Id" class="control-label"></label>
+                <input asp-for="CarDriver.Id" class="form-control" />
+                <span asp-validation-for="CarDriver.Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Number" class="control-label"></label>
+                <input asp-for="Car.Number" class="form-control" />
+                <span asp-validation-for="Car.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Capacity" class="control-label"></label>
+                <input asp-for="Car.Capacity" class="form-control" />
+                <span asp-validation-for="Car.Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.MarkName" class="control-label"></label>
+                <input asp-for="Car.MarkName" class="form-control" />
+                <span asp-validation-for="Car.MarkName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Number1" class="control-label"></label>
+                <input asp-for="Car.Number1" class="form-control" />
+                <span asp-validation-for="Car.Number1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Number2" class="control-label"></label>
+                <input asp-for="Car.Number2" class="form-control" />
+                <span asp-validation-for="Car.Number2" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Driver FullName</label>
+                <input asp-for="CarDriver.Fullname" class="form-control" />
+                <span asp-validation-for="CarDriver.Fullname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

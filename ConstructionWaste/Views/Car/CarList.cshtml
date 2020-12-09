@@ -1,0 +1,79 @@
+﻿@model IEnumerable<ConstructionWaste.DTOs.Car.CarDTO>
+
+@{
+    ViewData["Title"] = "CarList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CarList</h1>
+
+<p>
+    <a asp-action="AddCarAndDriver">Create New</a>
+    <a asp-action="CarDrivers">Car Drivers</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Capacity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MarkName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Number2)
+            </th>
+    
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Capacity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarkName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number2)
+            </td>
+            <td>
+                <form asp-action="DeleteCarAndDriver" asp-route-id="@item.Id">
+                    <a class="btn btn-warning" asp-action="EditCarAndDriver" asp-route-id="@item.Id">Edit</a>
+                    <a class="btn btn-dark" asp-action="CarDriver" asp-route-id="@item.Id">Driver</a>
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+
+            </td>
+           
+            
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,42 @@
+﻿@model ConstructionWaste.DTOs.Car.CarDriverDTO
+
+@{
+    ViewData["Title"] = "CarDriver";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CarDriver</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditClient">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Id" class="control-label"></label>
+                <input asp-for="Id" class="form-control" />
+                <span asp-validation-for="Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Fullname" class="control-label"></label>
+                <input asp-for="Fullname" class="form-control" />
+                <span asp-validation-for="Fullname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LegalId" class="control-label"></label>
+                <input asp-for="LegalId" class="form-control" />
+                <span asp-validation-for="LegalId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CreatedAt" class="control-label"></label>
+                <input asp-for="CreatedAt" class="form-control" />
+                <span asp-validation-for="CreatedAt" class="text-danger"></span>
+            </div>           
+            
+        </form>
+    </div>
+</div>
+<div>
+    
+    <a asp-action="CarList">Back to List</a>
+</div>

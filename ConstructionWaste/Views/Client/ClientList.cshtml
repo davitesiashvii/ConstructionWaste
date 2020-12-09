@@ -1,0 +1,75 @@
+﻿@model IEnumerable<ConstructionWaste.DTOs.Clients.ClientsDTO>
+
+@{
+    ViewData["Title"] = "ClientList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>ClientList</h1>
+
+
+<a asp-action="AddClient" class="btn btn-success mb-2">Add</a>
+<form asp-action="CLientList" method="post">
+    <div class="input-group">
+        <input class="form-control" type="text" name="SearchTerm" id="SearchTerm" />
+        <div class="input-group-append">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Representative)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Representative)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InsertTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeName)
+                </td>
+                <td>
+                    <form asp-action="DeleteClient" asp-route-id="@item.Id">
+                        <a class="btn btn-warning" asp-action="EditClient" asp-route-id="@item.Id">Edit</a>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,12 @@
+C:\Users\davit\source\repos\ConstructionWaste\Services\bin\Debug\netcoreapp3.1\Services.deps.json
+C:\Users\davit\source\repos\ConstructionWaste\Services\bin\Debug\netcoreapp3.1\Services.dll
+C:\Users\davit\source\repos\ConstructionWaste\Services\bin\Debug\netcoreapp3.1\Services.pdb
+C:\Users\davit\source\repos\ConstructionWaste\Services\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\davit\source\repos\ConstructionWaste\Services\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.csprojAssemblyReference.cache
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfoInputs.cache
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.AssemblyInfo.cs
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.csproj.CoreCompileInputs.cache
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.csproj.CopyComplete
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.dll
+C:\Users\davit\source\repos\ConstructionWaste\Services\obj\Debug\netcoreapp3.1\Services.pdb

@@ -1,0 +1,58 @@
+﻿@model ConstructionWaste.Models.CarVM
+
+@{
+    ViewData["Title"] = "AddCarAndDriver";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>AddCarAndDriver</h1>
+
+<h4>CarVM</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddCarAndDriver">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Car.Number" class="control-label"></label>
+                <input asp-for="Car.Number" class="form-control" />
+                <span asp-validation-for="Car.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Capacity" class="control-label"></label>
+                <input asp-for="Car.Capacity" class="form-control" />
+                <span asp-validation-for="Car.Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.MarkName" class="control-label"></label> 
+                <input asp-for="Car.MarkName" class="form-control" />
+                <span asp-validation-for="Car.MarkName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Number1" class="control-label"></label>
+                <input asp-for="Car.Number1" class="form-control" />
+                <span asp-validation-for="Car.Number1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Car.Number2" class="control-label"></label>
+                <input asp-for="Car.Number2" class="form-control" />
+                <span asp-validation-for="Car.Number2" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label  class="control-label">Driver FullName</label>
+                <input asp-for="CarDriver.Fullname" class="form-control" />
+                <span asp-validation-for="CarDriver.Fullname" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

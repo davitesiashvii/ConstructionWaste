@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConstructionWaste", "ConstructionWaste\ConstructionWaste.csproj", "{CDAB13D6-78B7-48E6-A126-2006198AD776}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{719BCB00-9BDA-403B-94EB-F428BAE8726A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{51F578D5-9C55-4649-B05A-BEE2786FAFE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDAB13D6-78B7-48E6-A126-2006198AD776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDAB13D6-78B7-48E6-A126-2006198AD776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDAB13D6-78B7-48E6-A126-2006198AD776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDAB13D6-78B7-48E6-A126-2006198AD776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719BCB00-9BDA-403B-94EB-F428BAE8726A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719BCB00-9BDA-403B-94EB-F428BAE8726A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719BCB00-9BDA-403B-94EB-F428BAE8726A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719BCB00-9BDA-403B-94EB-F428BAE8726A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51F578D5-9C55-4649-B05A-BEE2786FAFE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51F578D5-9C55-4649-B05A-BEE2786FAFE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51F578D5-9C55-4649-B05A-BEE2786FAFE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51F578D5-9C55-4649-B05A-BEE2786FAFE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C7782EF7-B4FD-4DFC-ACED-7D11A4E38729}
+	EndGlobalSection
+EndGlobal
